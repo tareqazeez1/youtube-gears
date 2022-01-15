@@ -104,7 +104,10 @@ section h2{
 .product-item img {
     width: 100%;
 }
-.item-title, .item-price {
+.item-name {
+    color: #E02C6D;
+}
+.item-name, .item-price {
     font-size: 22px;
     font-weight: 600;
     margin-top: 7px;
@@ -128,13 +131,13 @@ section h2{
     font-size: 13px;
 }
 
+/* Media Query for product section */
+
 @media only screen and (max-width:600px) {
     .product-items {
         grid-template-columns: 1fr;
     }
-    .item-price {
-        font-weight: 600;
-    }
+    
 }
 @media only screen and (min-width:601px) and (max-width:800px) {
     .product-items {
@@ -142,7 +145,7 @@ section h2{
     }
 }
 
-
+/* ------------------------------*/
 
 .see-button{
     font-size: 20px;
@@ -169,6 +172,7 @@ section h2{
     transition: transform 1s ease-in-out;
 }
 
+
 /* footer section */
 footer{
     background-color: rgb(12, 12, 70);
@@ -186,30 +190,40 @@ footer{
 }
 
 
-
-
-
+/* Media Query for home and bonus section */
 
 
 @media only screen and (max-width:600px) {
+
     .home, .bonus{
         flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .half-of-section{
+        width: 100%;
+        margin: 0;
+        
     }
     #camera-bg{
         background-size: 100%;
     }
-    .see-more-button{
+    .see-button{
         justify-content: center;
     }
 }
+
 @media only screen and (min-width:601px) and (max-width:800px) {
 
     .home, .bonus{
         flex-direction: column-reverse;
     }
+    .half-of-section{
+        width: 100%;
+    }
     #camera-bg{
         background-size: 100%;
     }
 }
 
 
+/* ------------------------------------*/
